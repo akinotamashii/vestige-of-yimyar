@@ -1,3 +1,18 @@
-2025/06/10-20:25:58.920 21c0 Recovering log #60
-2025/06/10-20:25:58.924 21c0 Delete type=0 #60
-2025/06/10-20:25:58.924 21c0 Delete type=3 #58
+2025/06/11-00:33:32.855 9174 Recovering log #65
+2025/06/11-00:33:32.855 9174 Recovering log #73
+2025/06/11-00:33:32.859 9174 Delete type=0 #65
+2025/06/11-00:33:32.859 9174 Delete type=2 #71
+2025/06/11-00:33:32.859 9174 Delete type=0 #73
+2025/06/11-00:33:32.859 9174 Delete type=3 #64
+2025/06/11-00:33:32.865 b890 Level-0 table #76: started
+2025/06/11-00:33:32.876 b890 Level-0 table #76: 2215 bytes OK
+2025/06/11-00:33:32.878 b890 Delete type=0 #74
+2025/06/11-00:33:32.878 b890 Manual compaction at level-0 from '!items!Channel_Vestige_Boon__Vitality' @ 72057594037927935 : 1 .. '!items!vestiges-toll' @ 0 : 0; will stop at (end)
+2025/06/11-00:33:32.878 b890 Manual compaction at level-1 from '!items!Channel_Vestige_Boon__Vitality' @ 72057594037927935 : 1 .. '!items!vestiges-toll' @ 0 : 0; will stop at '!items!vestiges-toll' @ 12 : 1
+2025/06/11-00:33:32.878 b890 Compacting 1@1 + 1@2 files
+2025/06/11-00:33:32.880 b890 Generated table #77@1: 2 keys, 2215 bytes
+2025/06/11-00:33:32.880 b890 Compacted 1@1 + 1@2 files => 2215 bytes
+2025/06/11-00:33:32.881 b890 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/06/11-00:33:32.881 b890 Delete type=2 #37
+2025/06/11-00:33:32.881 b890 Delete type=2 #76
+2025/06/11-00:33:32.882 b890 Manual compaction at level-1 from '!items!vestiges-toll' @ 12 : 1 .. '!items!vestiges-toll' @ 0 : 0; will stop at (end)

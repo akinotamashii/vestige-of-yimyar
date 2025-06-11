@@ -1,3 +1,17 @@
-2025/06/10-20:25:58.911 d768 Recovering log #81
-2025/06/10-20:25:58.915 d768 Delete type=0 #81
-2025/06/10-20:25:58.915 d768 Delete type=3 #79
+2025/06/11-00:33:34.100 b198 Recovering log #86
+2025/06/11-00:33:34.100 b198 Recovering log #94
+2025/06/11-00:33:34.103 b198 Delete type=0 #86
+2025/06/11-00:33:34.103 b198 Delete type=2 #92
+2025/06/11-00:33:34.104 b198 Delete type=0 #94
+2025/06/11-00:33:34.104 b198 Delete type=3 #85
+2025/06/11-00:33:34.109 8bc4 Level-0 table #97: started
+2025/06/11-00:33:34.119 8bc4 Level-0 table #97: 2214 bytes OK
+2025/06/11-00:33:34.121 8bc4 Delete type=0 #95
+2025/06/11-00:33:34.121 8bc4 Manual compaction at level-0 from '!items!Vestige_of_Yimyar_Dedication' @ 72057594037927935 : 1 .. '!items!Vestige_of_Yimyar_Dedication' @ 0 : 0; will stop at '!items!Vestige_of_Yimyar_Dedication' @ 15 : 1
+2025/06/11-00:33:34.121 8bc4 Compacting 1@0 + 1@1 files
+2025/06/11-00:33:34.123 8bc4 Generated table #98@0: 1 keys, 2214 bytes
+2025/06/11-00:33:34.123 8bc4 Compacted 1@0 + 1@1 files => 2214 bytes
+2025/06/11-00:33:34.124 8bc4 compacted to: files[ 0 1 0 0 0 0 0 ]
+2025/06/11-00:33:34.124 8bc4 Delete type=2 #52
+2025/06/11-00:33:34.124 8bc4 Delete type=2 #97
+2025/06/11-00:33:34.124 8bc4 Manual compaction at level-0 from '!items!Vestige_of_Yimyar_Dedication' @ 15 : 1 .. '!items!Vestige_of_Yimyar_Dedication' @ 0 : 0; will stop at (end)
