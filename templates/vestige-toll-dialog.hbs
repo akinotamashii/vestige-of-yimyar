@@ -1,9 +1,8 @@
 <form class="vestige-toll-dialog">
     <div class="form-group">
-        <label>Pay Vestige's Toll for {{name}}</label>
-        <div class="form-fields">
-            <input id="toll-amount" type="number" min="1" max="{{maxToll}}" value="{{maxToll}}">
-            <p class="hint">Current HP: {{currentHP}} (Cannot go below 1)</p>
-        </div>
+        <label>Vestige's Toll Amount:</label>
+        <input type="text" id="toll-input" value="3d8" placeholder="Enter number or dice (e.g. 3d8)">
+        <p class="notes">Enter a fixed amount or dice formula (e.g. 3d8, 2d6+2)</p>
+        <p class="notes">Current HP: {{currentHP}} (cannot reduce below 1)</p>
     </div>
 </form>

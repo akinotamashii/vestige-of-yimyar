@@ -208,9 +208,9 @@ export async function performVestigeRest(actorParam = null) {
             user: game.user.id,
             speaker: ChatMessage.getSpeaker({actor: finalActor}),
             content: chatContent,
-            // Don't whisper by default
-            whisper: [],
-            type: CONST.CHAT_MESSAGE_TYPES.OTHER
+            // Whisper only to the current user
+            whisper: [game.user.id],
+            type: CONST.CHAT_MESSAGE_TYPES.WHISPER
         }).then(message => {
             console.log("Vestige of Yimyar | Chat message created successfully");
             return message;

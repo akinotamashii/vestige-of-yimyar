@@ -185,3 +185,27 @@
   color: #ff6400;
   text-shadow: 0 0 8px #ff6400;
 }
+
+/* Dynamic Vestige Toll Links */
+.vestige-toll-link {
+  display: inline-block;
+  padding: 5px 10px;
+  background: rgba(150, 50, 50, 0.1);
+  border: 1px solid #962d2d;
+  border-radius: 3px;
+  color: #962d2d;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.vestige-toll-link:hover {
+  background: rgba(150, 50, 50, 0.2);
+  text-shadow: 0 0 8px #ff6400;
+}
+
+.vestige-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}

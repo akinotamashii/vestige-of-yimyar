@@ -1,4 +1,4 @@
-export async function applyVestigeToll() {
+export async function applyVestigeToll(amount = null) {
     // Get selected actor
     const actor = game.user.character || canvas.tokens.controlled[0]?.actor;
     if (!actor) {
@@ -13,12 +13,20 @@ export async function applyVestigeToll() {
     // Get total toll already applied (if any)
     const totalToll = actor.getFlag("vestige-of-yimyar", "totalToll") || 0;
     
-    // Show dialog to select amount of HP to convert
-    const tollAmount = await promptForTollAmount(actor);
-    if (!tollAmount || tollAmount <= 0) return;
+    let tollAmount;
+    
+    // If amount is provided, use it directly; otherwise show dialog
+    if (amount !== null && !isNaN(amount) && amount > 0) {
+        tollAmount = amount;
+        console.log(`Vestige of Yimyar | Direct toll application: ${tollAmount}`);
+    } else {
+        // Show dialog to select amount of HP to convert
+        tollAmount = await promptForTollAmount(actor);
+        if (!tollAmount || tollAmount <= 0) return;
+    }
     
     // Apply the toll
-    await processToll(actor, tollAmount);
+    return await processToll(actor, tollAmount);
 }
 
 async function promptForTollAmount(actor) {
@@ -39,9 +47,28 @@ async function promptForTollAmount(actor) {
                 pay: {
                     icon: '<i class="fas fa-check"></i>',
                     label: "Pay Toll",
-                    callback: html => {
-                        const amount = parseInt(html.find("#toll-amount").val());
-                        resolve(amount);
+                    callback: async html => {
+                        const input = html.find("#toll-input").val();
+                        
+                        // Check if input is a dice formula or a fixed number
+                        if (input.includes('d') || input.includes('+') || input.includes('-') || input.includes('*') || input.includes('/')) {
+                            // It's likely a dice formula
+                            try {
+                                const roll = await new Roll(input).evaluate({async: true});
+                                await roll.toMessage({
+                                    speaker: ChatMessage.getSpeaker({actor}),
+                                    flavor: "Vestige's Toll"
+                                });
+                                resolve(roll.total);
+                            } catch (error) {
+                                ui.notifications.error(`Invalid dice formula: ${error.message}`);
+                                resolve(0);
+                            }
+                        } else {
+                            // It's a fixed amount
+                            const amount = parseInt(input);
+                            resolve(isNaN(amount) ? 0 : amount);
+                        }
                     }
                 },
                 cancel: {
