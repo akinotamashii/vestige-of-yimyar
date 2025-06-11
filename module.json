@@ -1,0 +1,79 @@
+{
+  "id": "vestige-of-yimyar",
+  "title": "Vestige of Yimyar",
+  "description": "Implements the Vestige of Yimyar archetype including Vestige's Toll mechanics.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13",
+    "maximum": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "6.12.0"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "pf2e-workbench",
+        "type": "module",
+        "reason": "Enhances Vestige mechanics integration",
+        "compatibility": {}
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "Autumn Anderson",
+      "email": "iavasaenil@gmail.com",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "scripts/module.js"
+  ],
+  "styles": [
+    "styles/vestige.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "packs": [
+    {
+      "name": "vestige-feats",
+      "label": "Vestige of Yimyar Feats",
+      "path": "packs/vestige-feats",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "vestige-features",
+      "label": "Vestige Features",
+      "path": "packs/vestige-features",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "socket": true,
+  "url": "https://github.com/akinotamashii/vestige-of-yimyar",
+  "manifest": "https://raw.githubusercontent.com/akinotamashii/vestige-of-yimyar/main/module.json",
+  "download": "https://github.com/akinotamashii/vestige-of-yimyar/archive/v1.0.0.zip"
+}

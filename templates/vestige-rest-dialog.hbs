@@ -1,0 +1,15 @@
+<form class="vestige-message">
+    <div class="form-group">
+        <p><strong>Standard Rest</strong></p>
+        <p>This will restore spell slots, focus points, and other daily resources.</p>
+        <p>You will naturally recover {{defaultRecovery}} HP from rest.</p>
+    </div>
+    {{#if hasVestigeToll}}
+    <div class="form-group">
+        <p><strong>Vestige's Toll Conversion</strong></p>
+        <p>Current HP: {{currentHP}}/{{maxHP}}</p>
+        <p>Current Temp HP: {{tempHP}}</p>
+        <p>You can convert up to {{convertibleAmount}} temporary HP to regular HP.</p>
+    </div>
+    {{/if}}
+</form>

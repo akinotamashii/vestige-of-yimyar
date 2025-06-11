@@ -1,0 +1,66 @@
+{
+  "name": "Vestige's Toll",
+  "id": "vestiges-toll",
+  "type": "effect",
+  "img": "icons/svg/vestige.svg",
+  "_id": "Compendium.vestige-of-yimyar.vestige-features.Item.vestiges-toll",
+  "system": {
+    "description": {
+      "value": "<p>You have paid a Vestige's Toll, converting hit points into temporary hit points. Hit points lost through Vestige's Toll cannot be healed except by resting. Any healing you receive fills your temporary hit points instead of your regular hit points.</p><p>These temporary hit points last until your next full rest. When you regain hit points by resting, you may convert the same amount of temporary hit points into hit points. (For example, if you regained 32 hit points by resting, and had 40 temporary hit points, you could regain 64 total).</p><p>If you use an action with a Vestige's Toll while at 1 HP, the action is successful, but your life essence is permanently spent; you fall unconscious, and your doomed value increases by 1. This cannot ever be reduced. If you increase your doomed value to 4 this way, you disappear in a shimmering white light over the course of a minute.</p>"
+    },
+    "source": {
+      "value": "Vestige of Yimyar"
+    },
+    "traits": {
+      "value": ["rare", "divine", "necromancy"],
+      "rarity": "rare"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "selector": "healing",
+        "text": "Any healing you receive fills temporary hit points instead of regular hit points while under Vestige's Toll.",
+        "title": "Vestige's Toll"
+      },
+      {
+        "key": "Note",
+        "selector": "hp",
+        "text": "Hit points lost through Vestige's Toll cannot be healed except by resting.",
+        "title": "Vestige's Toll"
+      }
+    ],
+    "slug": "vestiges-toll",
+    "schema": {
+      "version": 0.854,
+      "lastMigration": null
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "sustained": false,
+      "expiry": "manual"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "target": null
+  },
+  "effects": [],
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.vestige-of-yimyar.vestige-features.Item.vestiges-toll"
+    },
+    "vestige-of-yimyar": {
+      "isVestigeToll": true
+    }
+  }
+}

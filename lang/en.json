@@ -1,0 +1,105 @@
+{
+  "vestige-of-yimyar": {
+    "moduleName": "Vestige of Yimyar",
+    "moduleDescription": "Implements the Vestige of Yimyar archetype including Vestige's Toll mechanics and healing redirection.",
+    
+    "settings": {
+      "enableVisualEffects": {
+        "name": "Enable Visual Effects",
+        "hint": "Add visual indicators to tokens affected by Vestige's Toll"
+      },
+      "showToolbarButtons": {
+        "name": "Show Toolbar Buttons",
+        "hint": "Add Vestige's Toll and Rest buttons to the token controls toolbar"
+      },
+      "includeInCombatTracker": {
+        "name": "Show Vestige Status in Combat Tracker",
+        "hint": "Display Vestige's Toll status in the combat tracker"
+      },
+      "configMenu": {
+        "name": "Vestige Configuration",
+        "label": "Configure Vestige Options",
+        "hint": "Configure advanced options for the Vestige of Yimyar module"
+      }
+    },
+    
+    "actions": {
+      "vestigeToll": "Vestige's Toll",
+      "vestigeRest": "Vestige Rest",
+      "channelGlamour": "Channel Vestige Boon: Glamour",
+      "channelVitality": "Channel Vestige Boon: Vitality"
+    },
+    
+    "dialogs": {
+      "toll": {
+        "title": "Vestige's Toll",
+        "hpCost": "Vestige's Toll (HP cost):",
+        "rollFormula": "Roll Formula (optional):",
+        "rollPlaceholder": "e.g. 3d8",
+        "currentHP": "Current HP:",
+        "currentTempHP": "Current Temp HP:",
+        "notes": "Vestige's Toll reduces your hit points but provides temporary HP. Healing will refill your temporary HP instead of regular HP until your next rest.",
+        "buttons": {
+          "roll": "Roll",
+          "cancel": "Cancel"
+        }
+      },
+      "rest": {
+        "title": "Take a Rest",
+        "standardRest": "Standard Rest",
+        "restDescription": "This will restore spell slots, focus points, and other daily resources.",
+        "hpRecovery": "You will naturally recover {recovery} HP from rest.",
+        "tollConversion": "Vestige's Toll Conversion",
+        "convertibleAmount": "You can convert up to {amount} temporary HP to regular HP.",
+        "buttons": {
+          "rest": "Rest",
+          "cancel": "Cancel"
+        }
+      }
+    },
+    
+    "messages": {
+      "tollPaid": "{name} pays a Vestige's Toll of {amount} HP and gains {amount} temporary HP.",
+      "newHP": "New HP: {current}/{max} (+{temp} temp)",
+      "tollReminder": "Remember: Hit points lost this way cannot be healed except by resting, and healing received fills temporary hit points instead.",
+      "lifeEssenceSpent": "{name}'s life essence is permanently spent. They fall unconscious, and their doomed value increases to {doomed}.",
+      "soulSpent": "{name}'s doomed value has reached 4. They begin to disappear in a shimmering white light over the course of a minute. They can freely converse during this time but cannot be resurrected except by a 10th-level ritual such as Wish.",
+      "restRecovery": "{name} recovers {amount} HP from rest.",
+      "tollConversion": "Additionally, {amount} temporary HP from Vestige's Toll was converted to regular HP.",
+      "healingRedirected": "Healing redirected to temporary HP for {name} due to Vestige's Toll",
+      "healingRedirectedDetail": "{name}'s healing of {amount} HP is redirected to temporary HP due to Vestige's Toll."
+    },
+    
+    "notifications": {
+      "selectToken": "Please select a token or assign a character to your user",
+      "pf2eOnly": "This feature only works with PF2e character actors",
+      "invalidAmount": "Please enter a valid amount greater than 0",
+      "noVestigeToll": "{name} does not have active Vestige's Toll effects",
+      "noTempHP": "{name} has no temporary HP to convert"
+    },
+    
+    "headers": {
+      "vestigeToll": "Vestige's Toll",
+      "lifeEssenceSpent": "Life Essence Spent",
+      "soulSpent": "Soul Spent",
+      "vestigeRest": "Vestige's Rest Conversion",
+      "standardRest": "Rest",
+      "healingRedirection": "Vestige's Toll - Healing Redirection",
+      "vestigeDashboard": "Vestiges of Yimyar"
+    },
+    
+    "dashboard": {
+      "noVestiges": "No characters currently under Vestige's Toll effect.",
+      "character": "Character",
+      "hp": "HP",
+      "tempHP": "Temp HP",
+      "doomed": "Doomed"
+    },
+    
+    "characterSheet": {
+      "vestigeTollTracker": "Vestige's Toll Tracker",
+      "applyToll": "Apply Toll",
+      "takeRest": "Take Rest"
+    }
+  }
+}

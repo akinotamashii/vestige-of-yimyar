@@ -1,0 +1,60 @@
+{
+  "name": "Channel Vestige Boon: Vitality",
+  "id": "channel-vestige-boon-vitality",
+  "type": "action",
+  "img": "icons/magic/nature/beam-hand-leaves-green.webp",
+  "_id": "Compendium.vestige-of-yimyar.vestige-features.Item.channel-vestige-boon-vitality",
+  "flags": {
+    "core": {}
+  },
+  "system": {
+    "description": {
+      "value": "<p>Cast the Heal spell as a divine innate spell. If you have a spellcasting DC, you may use it as the DC for the spell, otherwise use your class DC. Follow the action cost of the Heal spell as normal.</p><p><strong>Vestige's Toll</strong> 3d8 hp per spell level. The maximum spell level you may cast is half of your level rounded up. You may spend an additional 1d8 to increase the range or radius of the spell by 10 ft, as many times as you like.</p>"
+    },
+    "source": {
+      "value": "Vestige of Yimyar"
+    },
+    "traits": {
+      "value": [
+        "concentrate",
+        "manipulate",
+        "spellshape",
+        "divine"
+      ],
+      "rarity": "rare"
+    },
+    "rules": [],
+    "slug": "channel-vestige-boon-vitality",
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": "varies"
+    },
+    "category": "offensive",
+    "requirements": {
+      "value": "You must be displaying your Vestige Glamour"
+    },
+    "trigger": {
+      "value": ""
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "13.344",
+    "systemId": null,
+    "systemVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Channel_Vestige_Boon__Vitality"
+}

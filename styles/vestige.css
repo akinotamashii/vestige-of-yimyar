@@ -1,0 +1,187 @@
+/* vestige.css - Styling for Vestige of Yimyar module */
+
+/* ================ General Styling ================ */
+.vestige-module .notes {
+  font-style: italic;
+  color: #7a7971;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+}
+
+/* ================ Dialog Styling ================ */
+.vestige-toll-dialog .form-group,
+.vestige-rest-dialog .form-group {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.vestige-toll-dialog label,
+.vestige-rest-dialog label {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+.vestige-toll-dialog input,
+.vestige-rest-dialog input {
+  width: 100%;
+  margin-top: 0.3em;
+}
+
+.vestige-toll-dialog p.hp-status,
+.vestige-rest-dialog p.hp-status {
+  margin: 0.3em 0;
+  color: #605850;
+}
+
+/* Styling for the Toll amount display */
+.vestige-toll-amount {
+  font-weight: bold;
+  color: #b22c2c;
+}
+
+.vestige-temp-hp {
+  font-weight: bold;
+  color: #2c78b2;
+}
+
+/* ================ Token Effects ================ */
+.vestige-token-effect {
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 2px solid rgba(200, 220, 255, 0.5);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(100, 150, 255, 0.5);
+  animation: vestige-pulse 2s infinite;
+}
+
+@keyframes vestige-pulse {
+  0% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.05); }
+  100% { opacity: 0.7; transform: scale(1); }
+}
+
+/* ================ Chat Message Styling ================ */
+.vestige-message {
+  border-left: 3px solid #7986cb;
+  padding-left: 0.7em;
+  margin-bottom: 0.5em;
+}
+
+.vestige-message h3 {
+  color: #3f51b5;
+  border-bottom: 1px solid rgba(63, 81, 181, 0.3);
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+
+.vestige-message .toll-paid {
+  color: #b71c1c;
+  font-weight: bold;
+}
+
+.vestige-message .temp-gained {
+  color: #1565c0;
+  font-weight: bold;
+}
+
+.vestige-message .doomed-value {
+  color: #7b1fa2;
+  font-weight: bold;
+}
+
+/* Critical conditions styling */
+.vestige-message.critical {
+  border-left-color: #d32f2f;
+}
+
+.vestige-message.critical h3 {
+  color: #d32f2f;
+  border-bottom-color: rgba(211, 47, 47, 0.3);
+}
+
+/* Soul spent styling */
+.vestige-message.soul-spent {
+  border-left-color: #6a1b9a;
+  background: rgba(106, 27, 154, 0.05);
+}
+
+.vestige-message.soul-spent h3 {
+  color: #6a1b9a;
+  border-bottom-color: rgba(106, 27, 154, 0.3);
+}
+
+/* ================ Character Sheet Modifications ================ */
+.vestige-toll-tracker {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border-radius: 3px;
+  border-left: 3px solid #7986cb;
+}
+
+.vestige-toll-tracker h4 {
+  margin: 0 0 0.3em 0;
+  font-size: 1.1em;
+  color: #3f51b5;
+}
+
+.vestige-toll-buttons {
+  display: flex;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+
+.vestige-toll-buttons button {
+  flex: 1;
+}
+
+/* ================ Settings Menu ================ */
+.vestige-settings .setting-group {
+  margin-bottom: 1em;
+  padding: 0.7em;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.vestige-settings h3 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.3em;
+  margin-bottom: 0.7em;
+}
+
+.vestige-settings .form-fields {
+  justify-content: flex-start;
+}
+
+/* ================ Toolbar Buttons ================ */
+.vestige-toolbar-button {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.vestige-toolbar-button i {
+  position: relative;
+  color: #bdbdbd;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.vestige-toolbar-button:hover i {
+  color: #f0f0f0;
+  text-shadow: 0 0 8px #ff6400;
+}
+
+.vestige-toolbar-button.active i {
+  color: #ff6400;
+  text-shadow: 0 0 8px #ff6400;
+}

@@ -1,0 +1,50 @@
+{
+  "name": "Vestige of Yimyar Dedication",
+  "id": "vestige-of-yimyar-dedication",
+  "type": "feat",
+  "img": "icons/svg/vestige.svg",
+  "_id": "Compendium.vestige-of-yimyar.vestige-feats.Item.vestige-of-yimyar-dedication",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.vestige-of-yimyar.vestige-feats.Item.vestige-of-yimyar-dedication"
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>You are one of the twelve Vestiges of the god Yimyar, the god of life and fertility. Your powers manifested upon reaching puberty; a voice asked if you chose to accept the appointment of Vestige. Through wary trepidation, or perhaps enthusiastic excitement, you accepted it. Shortly after, you were wisked away to the capital of the Amayar Empire by the hands of the clergy for formal training once your power was discovered to have been accepted.</p><p>You are a conduit for life energy, healing those in need and destroying creatures susceptible to vitality magic. Activating your Vestige abilities comes at a personal cost; this is known as a Vestige's Toll. The Vestige's Toll value on an ability indicates the cost in hit points; hit points lost this way cannot be healed except by resting. You gain an equal number of temporary hit points equal to the amount lost, and any healing you receive refills your temporary hit points instead. These temporary hit points last until your next full rest. When you regain hit points by resting, you may convert the same amount of temporary hit points into hit points. (For example, if you regained 32 hit points by resting, and had 40 temporary hit points, you could regain 64 total).</p><p>Vestige's Toll cannot reduce you below 1 HP under normal circumstances. If you use an action with a Vestige's Toll while at 1 HP, the action is successful, but your life essence is permanently spent; you fall unconscious, and your doomed value increases by 1. This cannot ever be reduced under any circumstances; if you increase your doomed value to 4 this way, you disappear in a shimmering white light over the course of a minute. You do not fall unconscious in this case, and can freely converse with those around you. Your soul is spent in the process, and you cannot be resurrected, except by a 10th-level ritual such as Wish.</p><p>You gain two actions; Channel Vestige Boon: Glamour, and Channel Vestige Boon: Vitality.</p>"
+    },
+    "source": {
+      "value": "Homebrew"
+    },
+    "traits": {
+      "value": [
+        "rare",
+        "archetype",
+        "dedication"
+      ],
+      "rarity": "rare"
+    },
+    "rules": [],
+    "slug": "vestige-of-yimyar-dedication",
+    "level": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": ["You possess a soul, and are able to be affected by vitality and void magic under everyday conditions."]
+    },
+    "featType": {
+      "value": "archetype"
+    },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "rarity": {
+      "value": "rare"
+    }
+  }
+}
