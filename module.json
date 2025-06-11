@@ -20,7 +20,7 @@
     ],
     "recommends": [
       {
-        "id": "pf2e-workbench",
+        "id": "xdy-pf2e-workbench",
         "type": "module",
         "reason": "Enhances Vestige mechanics integration",
         "compatibility": {}
@@ -75,5 +75,5 @@
   "socket": true,
   "url": "https://github.com/akinotamashii/vestige-of-yimyar",
   "manifest": "https://raw.githubusercontent.com/akinotamashii/vestige-of-yimyar/master/module.json",
-  "download": "https://github.com/akinotamashii/vestige-of-yimyar/archive/v1.0.0.zip"
+  "download": "https://github.com/akinotamashii/vestige-of-yimyar/archive/v1.0.1.zip"
 }
