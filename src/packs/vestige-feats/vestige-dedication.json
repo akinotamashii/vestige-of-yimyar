@@ -3,7 +3,7 @@
   "id": "vestige-of-yimyar-dedication",
   "type": "feat",
   "img": "icons/svg/vestige.svg",
-  "_id": "Compendium.vestige-of-yimyar.vestige-feats.Item.vestige-of-yimyar-dedication",
+  "_id": "jb9g8byfmrwg6mwc",
   "flags": {
     "core": {
       "sourceId": "Compendium.vestige-of-yimyar.vestige-feats.Item.vestige-of-yimyar-dedication"
@@ -18,7 +18,6 @@
     },
     "traits": {
       "value": [
-        "rare",
         "archetype",
         "dedication"
       ],

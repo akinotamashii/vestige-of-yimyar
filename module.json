@@ -2,7 +2,7 @@
   "id": "vestige-of-yimyar",
   "title": "Vestige of Yimyar",
   "description": "Implements the Vestige of Yimyar archetype including Vestige's Toll mechanics.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "compatibility": {
     "minimum": "12",
     "verified": "13",
@@ -75,5 +75,5 @@
   "socket": true,
   "url": "https://github.com/akinotamashii/vestige-of-yimyar",
   "manifest": "https://raw.githubusercontent.com/akinotamashii/vestige-of-yimyar/master/module.json",
-  "download": "https://github.com/akinotamashii/vestige-of-yimyar/archive/v1.0.1.zip"
+  "download": "https://github.com/akinotamashii/vestige-of-yimyar/archive/v1.0.2.zip"
 }
