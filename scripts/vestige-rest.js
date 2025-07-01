@@ -70,7 +70,7 @@ export async function performVestigeRest(actorParam = null) {
             // New approach: Always convert some temp HP, even if HP isn't full
             
             // Calculate total healing budget
-            const healingBudget = restHealAmount;
+            const healingBudget = restHealAmount + Math.round(maxHP / 2);
             
             // CHANGE: Prioritize conversion over regular healing
             // Always convert as much temp HP as possible within the healing budget

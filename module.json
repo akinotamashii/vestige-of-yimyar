@@ -2,7 +2,7 @@
   "id": "vestige-of-yimyar",
   "title": "Vestige of Yimyar",
   "description": "Implements the Vestige of Yimyar archetype including Vestige's Toll mechanics.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "compatibility": {
     "minimum": "12",
     "verified": "13",
